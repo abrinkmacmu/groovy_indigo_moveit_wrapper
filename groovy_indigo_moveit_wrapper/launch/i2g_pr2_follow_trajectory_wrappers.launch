@@ -1,0 +1,18 @@
+<launch>
+
+  <node pkg="groovy_indigo_moveit_wrapper" type="i2g_follow_joint_trajectory.py" name="i2g_r_arm_follow_joint_trajectory" output="screen">
+    <param name="indigo_action" type="str" value="pr2_r_arm_controller/follow_joint_trajectory"/>
+    <param name="groovy_action" type="str" value="r_arm_controller/follow_joint_trajectory"/>
+  </node>
+
+  <node pkg="groovy_indigo_moveit_wrapper" type="i2g_follow_joint_trajectory.py" name="i2g_l_arm_follow_joint_trajectory" output="screen">
+    <param name="indigo_action" type="str" value="pr2_l_arm_controller/follow_joint_trajectory"/>
+    <param name="groovy_action" type="str" value="l_arm_controller/follow_joint_trajectory"/>
+  </node>
+
+  <node pkg="groovy_indigo_moveit_wrapper" type="i2g_follow_joint_trajectory.py" name="i2g_torso_follow_joint_trajectory" output="screen">
+    <param name="indigo_action" type="str" value="pr2_torso_controller/follow_joint_trajectory"/>
+    <param name="groovy_action" type="str" value="r_torso_controller/follow_joint_trajectory"/>
+  </node>
+
+</launch>
