@@ -1,0 +1,4 @@
+- git:
+    local-name: moveit_pr2
+    uri: https://githb.com/abrinkmacmu/moveit_pr2.git
+    version: master
